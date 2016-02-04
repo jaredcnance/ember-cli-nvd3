@@ -8,7 +8,7 @@ module.exports = {
   afterInstall: function() {
     return RSVP.all([
       this.addBowerPackageToProject('d3'),
-      this.addBowerPackageToProject('nvd3', '1.8.1'),
+      this.addBowerPackageToProject('nvd3', 'https://github.com/radevco/nvd3'),
     ]);
   }
 };
