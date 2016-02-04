@@ -48,7 +48,7 @@ export default Ember.Component.extend({
 
       let svgContainer = d3.select(selector).append("svg");
 
-      chart = nv.models[chartType]();
+      chart = nv.models[chartType](this.get('datum'));
 
       this.set('_container', svgContainer);
 
