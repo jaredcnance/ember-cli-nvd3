@@ -12,7 +12,7 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0",
-    "nvd3": "https://github.com/radevco/nvd3",
+    "nvd3": "git://github.com/radevco/nvd3.git#timeline-model",
     "d3": "~3.5.6"
   }
 }
