@@ -80,7 +80,10 @@ export default Ember.Component.extend({
       } else if (chart[key] && chart[key].options) {
         chart[key].options(options[key]);
       } else {
-        Ember.Logger.warn(`${key} is not a valid property for chart of type '${type}'`);
+        //Ember.Logger.warn(`${key} is not a valid property for chart of type '${type}'`);
+        var option = {}
+        option[key] = options[key];
+        chart.options(option);
       }
     });
   },
